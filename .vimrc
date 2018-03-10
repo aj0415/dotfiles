@@ -2,11 +2,11 @@ set nocompatible              " be iMproved
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
@@ -19,7 +19,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'fisadev/vim-isort', {'for': 'python'}
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'valloric/youcompleteme', { 'do': './install.py --all' }
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
 
 filetype plugin indent on    " required!
 
