@@ -8,6 +8,8 @@
 
 ### vim
 
+    $ brew install vim cmake
+
 Set up Vundle:
 
     $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -15,7 +17,7 @@ Set up Vundle:
 Start ```vim```, run ```:PluginInstall```, then:
 
     $ cd ~/.vim/bundle/YouCompleteMe
-    $ ./install.py --clang-completer
+    $ ./install.py --all
 
 ### bash_profile
 
