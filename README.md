@@ -6,9 +6,19 @@
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+### Brew Installs
+
+    $ brew install meetingbar
+    $ brew install vim cmake
+    $ brew install ripgrep
+
 ### vim
 
-    $ brew install vim cmake
+Install Powerline Fonts:
+
+    $ git clone https://github.com/powerline/fonts.git
+    $ cd fonts
+    $ ./install.sh
 
 Set up Vundle:
 
@@ -18,7 +28,3 @@ Start ```vim```, run ```:PluginInstall```, then:
 
     $ cd ~/.vim/bundle/YouCompleteMe
     $ ./install.py --all
-
-### bash_profile
-
-    $ . ~/.bash_profile
