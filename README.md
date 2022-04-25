@@ -11,6 +11,7 @@
     $ brew install meetingbar
     $ brew install vim cmake
     $ brew install ripgrep
+    $ brew install kube-ps1
 
 ### vim
 
