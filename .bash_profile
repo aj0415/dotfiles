@@ -13,7 +13,7 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 # get kubernetes context and namespace
-source /usr/local/opt/kube-ps1/share/kube-ps1.sh
+source /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh
 # prompt
 export PS1="\$(kube_ps1) \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # pyenv stuff
